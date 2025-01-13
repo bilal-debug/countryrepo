@@ -7,6 +7,7 @@ body {
   background-color: hsl(209, 23%, 22%);
   color: white;
 }
+
 img {
   width: 100%;
   height: 150px;
@@ -17,6 +18,9 @@ img {
 
   padding-inline: 80px;
   box-shadow: 0 4px 9px -6px gray;
+}
+.dark-textmode {
+  color: white;
 }
 .darkmain-nav {
   display: flex;

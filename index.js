@@ -8,6 +8,9 @@ function modeFunction() {
   let svg = document.getElementById("svg");
   svg.classList.toggle("darksvg");
 
+  let text = document.getElementById("textmode");
+  text.classList.toggle("dark-textmode");
+
   if (element.classList.contains("dark-mode")) {
     document.getElementById("textmode").innerText = "Dark Mode";
   } else {

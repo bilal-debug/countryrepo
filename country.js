@@ -1,7 +1,5 @@
 search = window.location.search;
 const params = new URLSearchParams(search);
-
-// Get the value of the 'name' parameter
 const countryName = params.get("name");
 console.log(countryName);
 
