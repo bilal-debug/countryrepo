@@ -76,6 +76,9 @@ function poplateData(data) {
   data.forEach((country) => {
     let cardDiv = document.createElement("div");
     cardDiv.className = "card";
+    cardDiv.onclick = () => {
+      window.location.href = "country.html?name=" + country.name.common;
+    };
 
     let cardimg = document.createElement("img");
     cardimg.src = country.flags.png;
