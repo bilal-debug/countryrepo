@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body >
+    <nav>
+      <div id="main-nav" class="main-nav">
+        <div class="nav-1"><p>Where in the world?</p></div>
+        <div class="nav-2">
+          <div>
+            <button style="fill: black;" onclick="modeFunction()"><svg id="svg"  width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                <g clip-path="url(#a)">
+                
+                <path d="M12 0a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0V1a1 1 0 0 1 1-1ZM4.929 3.515a1 1 0 0 0-1.414 1.414l2.828 2.828a1 1 0 0 0 1.414-1.414L4.93 3.515ZM1 11a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H1ZM18 12a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 0 1-1-1ZM17.657 16.243a1 1 0 0 0-1.414 1.414l2.828 2.828a1 1 0 1 0 1.414-1.414l-2.828-2.828ZM7.757 17.657a1 1 0 1 0-1.414-1.414L3.515 19.07a1 1 0 1 0 1.414 1.414l2.828-2.828ZM20.485 4.929a1 1 0 0 0-1.414-1.414l-2.828 2.828a1 1 0 1 0 1.414 1.414l2.828-2.828ZM13 19a1 1 0 1 0-2 0v4a1 1 0 1 0 2 0v-4ZM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z"/>
+                
+                </g>
+                
+                <defs>
+                
+                <clipPath id="a">
+                
+                <path fill="#ffffff" d="M0 0h24v24H0z"/>
+                
+                </clipPath>
+                
+                </defs>
+                
+                </svg>
+        </button>
+          </div>
+          <div><p id="textmode">Dark  Mode</p></div>
+        </div>
+      </div>
+    </nav>
+    <div class="main-body">
+      <div class="main-searchbar">
+        <div class="searcbar-1">
+          <form class="example" action="action_page.php">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Search.." name="search" id="search" oninput="searchR()"/>
+          </form>
+        </div>
+        <div class="searchbar-2">
+          <select name="" id="mainSelect"  onchange="RegionSelection()">
+            <option value="region">All Region</option>
+            <option value="Africa" >Africa</option>
+            <option value="America">America</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceania">Oceania</option>
+          </select>
+        </div>
+      </div>
+      <div class="countrydata" style="padding-block: 20px;">
+        <div class="countrylist-1" id="country-data">
+
+        
+
+         
+        
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
